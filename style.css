@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a0a14;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.page {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.headline {
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+  margin-bottom: 2.5rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #7c6ff0, #a78bfa);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(124, 111, 240, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.phone-block {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #ffffff;
+}
+
+.phone-label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #9a9ab0;
+}
+
+.phone-number {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .headline {
+    font-size: 1.9rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
